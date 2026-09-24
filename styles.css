@@ -18,6 +18,9 @@
 
   --ground: #f1f3ea;
   --surface: #fafbf6;
+  --band: #e4eadb;
+  --grain-opacity: .07;
+  --grain-blend: multiply;
   --ink: #14231a;
   --ink-2: #46574b;
   --rule: rgb(20 35 26 / .14);
@@ -43,6 +46,9 @@
 :root[data-theme="dark"] {
   --ground: #0e1a13;
   --surface: #14241a;
+  --band: #122219;
+  --grain-opacity: .05;
+  --grain-blend: screen;
   --ink: #e5ebde;
   --ink-2: #a9b8a8;
   --rule: rgb(229 235 222 / .14);
@@ -56,7 +62,7 @@
 
 /* ---------- Base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 8px); -webkit-text-size-adjust: 100%; }
+html { overflow-x: clip; scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 8px); -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
   background: var(--ground);
@@ -172,18 +178,33 @@ figure { margin: 0; }
 
 /* ---------- Hero ---------- */
 .hero {
+  --hero-pad: clamp(1.25rem, 5vw, 5rem);
+  position: relative;
   display: grid; grid-template-columns: 1fr 1fr;
   min-height: min(calc(100dvh - var(--header-h)), 820px);
+  background: var(--leaf-800);
+}
+/* The field spans the whole column (no seam on wide screens); padding keeps the text in the inner 44rem. */
+.hero-copy {
+  position: relative; isolation: isolate; overflow: hidden;
+  color: #eef2e6;
+  padding: clamp(3rem, 7vw, 6rem) var(--hero-pad);
+  padding-left: max(var(--hero-pad), calc(100% - 44rem + var(--hero-pad)));
+  display: flex; flex-direction: column; justify-content: center; gap: 1.6rem;
   background:
-    radial-gradient(70% 90% at 0% 100%, rgb(155 176 90 / .14), transparent 60%),
+    radial-gradient(70% 90% at 0% 100%, rgb(155 176 90 / .16), transparent 60%),
     var(--leaf-800);
 }
-.hero-copy {
-  color: #eef2e6;
-  padding: clamp(3rem, 7vw, 6rem) clamp(1.25rem, 5vw, 5rem);
-  display: flex; flex-direction: column; justify-content: center; gap: 1.6rem;
-  max-width: 44rem; margin-left: auto; width: 100%;
+/* Clove canopy as a leaf-green duotone: strongest bottom-left, gone behind the headline. */
+.hero-copy::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: url("https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Buah_cengking_yg_suda_siap_di_panen_-_panoramio.jpg/1280px-Buah_cengking_yg_suda_siap_di_panen_-_panoramio.jpg") center 35% / cover;
+  filter: grayscale(1) contrast(1.25) brightness(1.1);
+  mix-blend-mode: soft-light; opacity: .55;
+  -webkit-mask-image: linear-gradient(20deg, #000 0%, rgb(0 0 0 / .55) 35%, transparent 75%);
+  mask-image: linear-gradient(20deg, #000 0%, rgb(0 0 0 / .55) 35%, transparent 75%);
 }
+
 .hero h1 {
   font-size: clamp(2.5rem, 1.5rem + 3.2vw, 4.4rem);
   font-weight: 780; font-stretch: 82%; letter-spacing: -0.03em; line-height: 1.02;
@@ -192,7 +213,8 @@ figure { margin: 0; }
 .hero-sub { font-size: clamp(1.05rem, 1rem + .35vw, 1.25rem); color: #c9d4c2; max-width: 34ch; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; padding-top: .4rem; }
 .hero-media { position: relative; overflow: hidden; background: var(--leaf-900); }
-.hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 38% 45%; }
+/* Absolutely placed so the portrait photo fills the column without setting the hero height. */
+.hero-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 38% 45%; }
 
 @media (prefers-reduced-motion: no-preference) {
   .hero h1, .hero-sub, .hero-actions { animation: rise .9s var(--ease-out) both; }
@@ -232,7 +254,7 @@ figure { margin: 0; }
 [data-theme="dark"] .facts dd { color: #ecd3c4; }
 
 /* ---------- Products ---------- */
-.products { border-top: 1px solid var(--rule); }
+
 .grade-grid {
   display: grid; gap: clamp(1rem, 2vw, 1.5rem);
   grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -363,7 +385,7 @@ figure { margin: 0; }
 .market-group small { color: var(--ink-2); font-size: .875rem; }
 
 /* ---------- FAQ ---------- */
-.faq { border-top: 1px solid var(--rule); }
+
 .faq-list { max-width: 60rem; border-top: 1px solid var(--rule); }
 .faq-item { border-bottom: 1px solid var(--rule); }
 .faq-item summary {
@@ -442,6 +464,45 @@ figure { margin: 0; }
 .credits ul { margin-top: .6rem; display: grid; gap: .3rem; }
 .credits a { color: #e9d9cf; }
 
+/* ---------- Atmosphere ----------
+   Grain: one fixed, non-interactive layer over the page (never on scrolling containers).
+   Sections: full-bleed tone bands and soft washes in the plant's colours, placed differently per section. */
+body::after {
+  content: ""; position: fixed; inset: 0; z-index: 60; pointer-events: none;
+  opacity: var(--grain-opacity); mix-blend-mode: var(--grain-blend);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .08 0 0 0 0 .14 0 0 0 0 .1 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.commitment, .products, .quality, .origin, .markets, .faq { position: relative; isolation: isolate; }
+.commitment::before, .products::before, .quality::before, .markets::before, .faq::before {
+  content: ""; position: absolute; z-index: -1; top: 0; bottom: 0; left: 50%; width: 100vw; transform: translateX(-50%);
+  pointer-events: none;
+}
+/* Commitment: faint bud-green light rising from the hero */
+.commitment::before { background: radial-gradient(50% 70% at 12% 0%, rgb(155 176 90 / .16), transparent 70%); }
+/* Products: sage band, blush wash top-right behind the cards */
+.products::before {
+  background:
+    radial-gradient(40% 55% at 92% 8%, rgb(196 61 90 / .08), transparent 70%),
+    radial-gradient(45% 60% at 0% 100%, rgb(155 176 90 / .18), transparent 70%),
+    var(--band);
+}
+/* Quality: warm dried-clove light low on the left, under the document list */
+.quality::before { background: radial-gradient(45% 60% at 0% 85%, rgb(138 74 44 / .09), transparent 70%); }
+/* Markets: sage band with a leaf wash on the right */
+.markets::before {
+  background:
+    radial-gradient(40% 70% at 100% 30%, rgb(61 122 79 / .14), transparent 70%),
+    var(--band);
+}
+/* FAQ: a single bud-green glow behind the questions */
+.faq::before { background: radial-gradient(50% 80% at 85% 60%, rgb(155 176 90 / .12), transparent 70%); }
+.markets { padding-bottom: var(--section-y); }
+
+@media (prefers-reduced-transparency: reduce) {
+  body::after { display: none; }
+}
+
 /* ---------- Scroll motion ----------
    Each section gets one motion that matches its content. Everything is gated on
    reduced-motion; entrance states only apply once the head script sets .motion. */
@@ -473,7 +534,7 @@ figure { margin: 0; }
 @supports (animation-timeline: view()) {
   @media (prefers-reduced-motion: no-preference) {
     /* Hero photo drifts as the hero leaves: depth into the content below */
-    .hero-media { view-timeline: --hero block; }
+    .hero { view-timeline: --hero block; }
     .hero-media img { animation: settle 1.6s var(--ease-out) both, hero-drift linear both; animation-timeline: auto, --hero; animation-range: normal, exit 0% exit 100%; }
     @keyframes hero-drift { to { translate: 0 14%; scale: 1.08; } }
 
@@ -519,7 +580,7 @@ figure { margin: 0; }
   .primary-nav .nav-lang { margin: 0; padding: 0; border: 0; }
 
   .hero { grid-template-columns: 1fr; min-height: 0; }
-  .hero-copy { max-width: none; padding-block: 3rem 2.75rem; }
+  .hero-copy { padding-block: 3rem 2.75rem; padding-left: var(--hero-pad); }
   .hero-media { aspect-ratio: 4 / 3; order: -1; }
   .commitment, .quality, .contact { grid-template-columns: 1fr; }
   .packaging dl { grid-template-columns: 1fr 1fr; }

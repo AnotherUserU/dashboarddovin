@@ -1,0 +1,9 @@
+node_modules/
+.claude/
+# Impeccable working files: review screenshots, decision rounds, machine-local config
+.impeccable/review/
+.impeccable/decision/
+.impeccable/build/
+.impeccable/config.local.json
+.impeccable/brief-body.md
+.impeccable/questions/

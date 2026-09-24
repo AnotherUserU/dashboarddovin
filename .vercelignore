@@ -1,0 +1,7 @@
+# Vercel serves this site as static files. The local dev server and internal docs are not deployed.
+server.js
+package.json
+PRODUCT.md
+DESIGN.md
+.impeccable
+.claude

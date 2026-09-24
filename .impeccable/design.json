@@ -1,0 +1,435 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-24T07:12:36.284Z",
+  "title": "Design System: Nusajawa Clove",
+  "extensions": {
+    "colorMeta": {
+      "leaf-800": {
+        "role": "secondary",
+        "displayName": "Clove Leaf",
+        "canonical": "oklch(30% 0.048 157)",
+        "tonalRamp": [
+          "oklch(15% 0.024 157)",
+          "oklch(25% 0.048 157)",
+          "oklch(35% 0.048 157)",
+          "oklch(48% 0.048 157)",
+          "oklch(60% 0.048 157)",
+          "oklch(72% 0.048 157)",
+          "oklch(84% 0.048 157)",
+          "oklch(95% 0.024 157)"
+        ]
+      },
+      "leaf-700": {
+        "role": "secondary",
+        "displayName": "Deep Leaf",
+        "canonical": "oklch(37.1% 0.065 156)",
+        "tonalRamp": [
+          "oklch(15% 0.033 156)",
+          "oklch(25% 0.065 156)",
+          "oklch(35% 0.065 156)",
+          "oklch(48% 0.065 156)",
+          "oklch(60% 0.065 156)",
+          "oklch(72% 0.065 156)",
+          "oklch(84% 0.065 156)",
+          "oklch(95% 0.033 156)"
+        ]
+      },
+      "leaf-500": {
+        "role": "secondary",
+        "displayName": "Leaf",
+        "canonical": "oklch(52.6% 0.093 152)",
+        "tonalRamp": [
+          "oklch(15% 0.046 152)",
+          "oklch(25% 0.093 152)",
+          "oklch(35% 0.093 152)",
+          "oklch(48% 0.093 152)",
+          "oklch(60% 0.093 152)",
+          "oklch(72% 0.093 152)",
+          "oklch(84% 0.093 152)",
+          "oklch(95% 0.046 152)"
+        ]
+      },
+      "bud-500": {
+        "role": "tertiary",
+        "displayName": "Green Bud",
+        "canonical": "oklch(72.2% 0.115 121)",
+        "tonalRamp": [
+          "oklch(15% 0.058 121)",
+          "oklch(25% 0.115 121)",
+          "oklch(35% 0.115 121)",
+          "oklch(48% 0.115 121)",
+          "oklch(60% 0.115 121)",
+          "oklch(72% 0.115 121)",
+          "oklch(84% 0.115 121)",
+          "oklch(95% 0.058 121)"
+        ]
+      },
+      "bud-200": {
+        "role": "tertiary",
+        "displayName": "Bud Mist",
+        "canonical": "oklch(90.8% 0.051 118)",
+        "tonalRamp": [
+          "oklch(15% 0.025 118)",
+          "oklch(25% 0.051 118)",
+          "oklch(35% 0.051 118)",
+          "oklch(48% 0.051 118)",
+          "oklch(60% 0.051 118)",
+          "oklch(72% 0.051 118)",
+          "oklch(84% 0.051 118)",
+          "oklch(95% 0.025 118)"
+        ]
+      },
+      "blush-500": {
+        "role": "primary",
+        "displayName": "Blush Bud",
+        "canonical": "oklch(56.2% 0.171 12)",
+        "tonalRamp": [
+          "oklch(15% 0.086 12)",
+          "oklch(25% 0.171 12)",
+          "oklch(35% 0.171 12)",
+          "oklch(48% 0.171 12)",
+          "oklch(60% 0.171 12)",
+          "oklch(72% 0.171 12)",
+          "oklch(84% 0.171 12)",
+          "oklch(95% 0.086 12)"
+        ]
+      },
+      "blush-600": {
+        "role": "primary",
+        "displayName": "Ripe Blush",
+        "canonical": "oklch(49.2% 0.154 12)",
+        "tonalRamp": [
+          "oklch(15% 0.077 12)",
+          "oklch(25% 0.154 12)",
+          "oklch(35% 0.154 12)",
+          "oklch(48% 0.154 12)",
+          "oklch(60% 0.154 12)",
+          "oklch(72% 0.154 12)",
+          "oklch(84% 0.154 12)",
+          "oklch(95% 0.077 12)"
+        ]
+      },
+      "blush-200": {
+        "role": "primary",
+        "displayName": "Petal Wash",
+        "canonical": "oklch(88.2% 0.046 5)",
+        "tonalRamp": [
+          "oklch(15% 0.023 5)",
+          "oklch(25% 0.046 5)",
+          "oklch(35% 0.046 5)",
+          "oklch(48% 0.046 5)",
+          "oklch(60% 0.046 5)",
+          "oklch(72% 0.046 5)",
+          "oklch(84% 0.046 5)",
+          "oklch(95% 0.023 5)"
+        ]
+      },
+      "clove-900": {
+        "role": "tertiary",
+        "displayName": "Clove Husk",
+        "canonical": "oklch(22.3% 0.04 38)",
+        "tonalRamp": [
+          "oklch(15% 0.020 38)",
+          "oklch(25% 0.040 38)",
+          "oklch(35% 0.040 38)",
+          "oklch(48% 0.040 38)",
+          "oklch(60% 0.040 38)",
+          "oklch(72% 0.040 38)",
+          "oklch(84% 0.040 38)",
+          "oklch(95% 0.020 38)"
+        ]
+      },
+      "clove-700": {
+        "role": "tertiary",
+        "displayName": "Dried Clove",
+        "canonical": "oklch(30.9% 0.062 39)",
+        "tonalRamp": [
+          "oklch(15% 0.031 39)",
+          "oklch(25% 0.062 39)",
+          "oklch(35% 0.062 39)",
+          "oklch(48% 0.062 39)",
+          "oklch(60% 0.062 39)",
+          "oklch(72% 0.062 39)",
+          "oklch(84% 0.062 39)",
+          "oklch(95% 0.031 39)"
+        ]
+      },
+      "clove-500": {
+        "role": "tertiary",
+        "displayName": "Clove",
+        "canonical": "oklch(48.1% 0.097 45)",
+        "tonalRamp": [
+          "oklch(15% 0.049 45)",
+          "oklch(25% 0.097 45)",
+          "oklch(35% 0.097 45)",
+          "oklch(48% 0.097 45)",
+          "oklch(60% 0.097 45)",
+          "oklch(72% 0.097 45)",
+          "oklch(84% 0.097 45)",
+          "oklch(95% 0.049 45)"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Leaf Paper",
+        "canonical": "oklch(96% 0.012 117)",
+        "tonalRamp": [
+          "oklch(15% 0.006 117)",
+          "oklch(25% 0.012 117)",
+          "oklch(35% 0.012 117)",
+          "oklch(48% 0.012 117)",
+          "oklch(60% 0.012 117)",
+          "oklch(72% 0.012 117)",
+          "oklch(84% 0.012 117)",
+          "oklch(95% 0.006 117)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Pale Leaf",
+        "canonical": "oklch(98.6% 0.007 116)",
+        "tonalRamp": [
+          "oklch(15% 0.004 116)",
+          "oklch(25% 0.007 116)",
+          "oklch(35% 0.007 116)",
+          "oklch(48% 0.007 116)",
+          "oklch(60% 0.007 116)",
+          "oklch(72% 0.007 116)",
+          "oklch(84% 0.007 116)",
+          "oklch(95% 0.004 116)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Forest Ink",
+        "canonical": "oklch(23.9% 0.027 157)",
+        "tonalRamp": [
+          "oklch(15% 0.013 157)",
+          "oklch(25% 0.027 157)",
+          "oklch(35% 0.027 157)",
+          "oklch(48% 0.027 157)",
+          "oklch(60% 0.027 157)",
+          "oklch(72% 0.027 157)",
+          "oklch(84% 0.027 157)",
+          "oklch(95% 0.013 157)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Moss Ink",
+        "canonical": "oklch(43.8% 0.029 154)",
+        "tonalRamp": [
+          "oklch(15% 0.015 154)",
+          "oklch(25% 0.029 154)",
+          "oklch(35% 0.029 154)",
+          "oklch(48% 0.029 154)",
+          "oklch(60% 0.029 154)",
+          "oklch(72% 0.029 154)",
+          "oklch(84% 0.029 154)",
+          "oklch(95% 0.015 154)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only, max 18ch."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section h2."
+      },
+      "statement": {
+        "displayName": "Statement",
+        "purpose": "Pull statement; first line in deep leaf."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "h3 and product names."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Reading copy, 34-62ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "dt labels, captions, hints."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "Measured values only (specs, capacity, MOQ)."
+      }
+    },
+    "shadows": [
+      {
+        "name": "action-lift",
+        "value": "0 1px 0 rgb(0 0 0 / .08), 0 6px 18px -8px rgb(164 40 70 / .55)",
+        "purpose": "Primary button at rest; hover grows to 0 10px 24px -10px at .7."
+      },
+      {
+        "name": "grade-hover",
+        "value": "0 18px 40px -24px rgb(23 53 36 / .45)",
+        "purpose": "Grade card on hover with translateY(-3px)."
+      },
+      {
+        "name": "panel-float",
+        "value": "0 30px 60px -30px rgb(0 0 0 / .55)",
+        "purpose": "Enquiry form on the leaf field."
+      },
+      {
+        "name": "field-focus",
+        "value": "0 0 0 3px rgb(61 122 79 / .25)",
+        "purpose": "Input focus ring."
+      },
+      {
+        "name": "header-glass",
+        "value": "backdrop-filter: saturate(140%) blur(10px)",
+        "purpose": "Sticky header over 90% ground."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "All state transitions and entrances."
+      },
+      {
+        "name": "state",
+        "value": ".2s",
+        "purpose": "Colour, border, and shadow changes."
+      },
+      {
+        "name": "lift",
+        "value": ".35s",
+        "purpose": "Card lift and nav underline draw."
+      },
+      {
+        "name": "hero-entrance",
+        "value": "rise .9s, staggered .08s",
+        "purpose": "Hero copy rises 18px; photo settles from scale 1.06 over 1.6s. Off under reduced motion."
+      },
+      {
+        "name": "ripening",
+        "value": "animation-timeline: scroll(root block)",
+        "purpose": "Ripening bar fill; IntersectionObserver fallback."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "grades-2col",
+        "value": "1100px"
+      },
+      {
+        "name": "single-column",
+        "value": "900px"
+      },
+      {
+        "name": "stack",
+        "value": "640px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single action: request an offer, send the enquiry.",
+      "html": "<button class=\"ds-btn ds-btn-primary\">Request offer</button>",
+      "css": ":host{--leaf-800:#173524;--leaf-700:#1f4a31;--leaf-500:#3d7a4f;--bud-500:#9bb05a;--blush-500:#c43d5a;--blush-600:#a52f49;--clove-500:#8a4a2c;--clove-700:#4a2417;--ground:#f1f3ea;--surface:#fafbf6;--ink:#14231a;--ink-2:#46574b;--rule:rgb(20 35 26/.14);--rule-strong:rgb(20 35 26/.28);--radius:4px;--ease-out:cubic-bezier(0.16,1,0.3,1);--font-sans:\"Archivo\",ui-sans-serif,system-ui,sans-serif;--font-mono:\"Azeret Mono\",ui-monospace,monospace}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:.75rem 1.4rem;border:1px solid transparent;border-radius:var(--radius);font:600 1rem/1 var(--font-sans);font-stretch:95%;cursor:pointer;transition:background-color .2s var(--ease-out),border-color .2s var(--ease-out),transform .15s var(--ease-out),box-shadow .2s var(--ease-out)}.ds-btn:active{transform:translateY(1px) scale(.985)}.ds-btn:focus-visible{outline:2px solid var(--blush-500);outline-offset:3px}.ds-btn-primary{background:var(--blush-500);color:#fff;box-shadow:0 1px 0 rgb(0 0 0/.08),0 6px 18px -8px rgb(164 40 70/.55)}.ds-btn-primary:hover{background:var(--blush-600);box-shadow:0 1px 0 rgb(0 0 0/.08),0 10px 24px -10px rgb(164 40 70/.7)}"
+    },
+    {
+      "name": "Ghost Button on Leaf",
+      "kind": "button",
+      "refersTo": "button-ghost-on-leaf",
+      "description": "Secondary action, only on deep leaf fields.",
+      "html": "<div class=\"ds-leaf\"><button class=\"ds-btn ds-btn-ghost\">View products</button></div>",
+      "css": ":host{--leaf-800:#173524;--leaf-700:#1f4a31;--leaf-500:#3d7a4f;--bud-500:#9bb05a;--blush-500:#c43d5a;--blush-600:#a52f49;--clove-500:#8a4a2c;--clove-700:#4a2417;--ground:#f1f3ea;--surface:#fafbf6;--ink:#14231a;--ink-2:#46574b;--rule:rgb(20 35 26/.14);--rule-strong:rgb(20 35 26/.28);--radius:4px;--ease-out:cubic-bezier(0.16,1,0.3,1);--font-sans:\"Archivo\",ui-sans-serif,system-ui,sans-serif;--font-mono:\"Azeret Mono\",ui-monospace,monospace}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:.75rem 1.4rem;border:1px solid transparent;border-radius:var(--radius);font:600 1rem/1 var(--font-sans);font-stretch:95%;cursor:pointer;transition:background-color .2s var(--ease-out),border-color .2s var(--ease-out),transform .15s var(--ease-out),box-shadow .2s var(--ease-out)}.ds-btn:active{transform:translateY(1px) scale(.985)}.ds-btn:focus-visible{outline:2px solid var(--blush-500);outline-offset:3px}.ds-leaf{background:var(--leaf-800);padding:1.5rem}.ds-btn-ghost{background:transparent;color:#f1f3ea;border-color:rgb(241 243 234/.42)}.ds-btn-ghost:hover{border-color:#f1f3ea;background:rgb(241 243 234/.08)}"
+    },
+    {
+      "name": "Text Link",
+      "kind": "custom",
+      "description": "Inline action with rule underline and arrow; card footers.",
+      "html": "<a class=\"ds-text-link\" href=\"#\">Request offer <svg width=\"16\" height=\"16\" viewBox=\"0 0 256 256\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M221.66 133.66l-72 72a8 8 0 0 1-11.32-11.32L196.69 136H40a8 8 0 0 1 0-16h156.69l-58.35-58.34a8 8 0 0 1 11.32-11.32l72 72a8 8 0 0 1 0 11.32Z\"/></svg></a>",
+      "css": ":host{--leaf-800:#173524;--leaf-700:#1f4a31;--leaf-500:#3d7a4f;--bud-500:#9bb05a;--blush-500:#c43d5a;--blush-600:#a52f49;--clove-500:#8a4a2c;--clove-700:#4a2417;--ground:#f1f3ea;--surface:#fafbf6;--ink:#14231a;--ink-2:#46574b;--rule:rgb(20 35 26/.14);--rule-strong:rgb(20 35 26/.28);--radius:4px;--ease-out:cubic-bezier(0.16,1,0.3,1);--font-sans:\"Archivo\",ui-sans-serif,system-ui,sans-serif;--font-mono:\"Azeret Mono\",ui-monospace,monospace}.ds-text-link{display:inline-flex;align-items:center;gap:.4rem;font:650 1rem var(--font-sans);color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule-strong);padding-bottom:2px;transition:border-color .2s,gap .2s var(--ease-out)}.ds-text-link:hover{border-color:var(--blush-500);gap:.65rem}.ds-text-link:focus-visible{outline:2px solid var(--blush-500);outline-offset:3px;border-radius:2px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Enquiry form field with leaf focus ring.",
+      "html": "<label class=\"ds-field\"><span>Company</span><input class=\"ds-input\" placeholder=\"Company name\"></label>",
+      "css": ":host{--leaf-800:#173524;--leaf-700:#1f4a31;--leaf-500:#3d7a4f;--bud-500:#9bb05a;--blush-500:#c43d5a;--blush-600:#a52f49;--clove-500:#8a4a2c;--clove-700:#4a2417;--ground:#f1f3ea;--surface:#fafbf6;--ink:#14231a;--ink-2:#46574b;--rule:rgb(20 35 26/.14);--rule-strong:rgb(20 35 26/.28);--radius:4px;--ease-out:cubic-bezier(0.16,1,0.3,1);--font-sans:\"Archivo\",ui-sans-serif,system-ui,sans-serif;--font-mono:\"Azeret Mono\",ui-monospace,monospace}.ds-field{display:flex;flex-direction:column;gap:.45rem;font:600 .9375rem var(--font-sans);color:var(--ink)}.ds-input{min-height:48px;padding:.7rem .85rem;font:400 1rem var(--font-sans);color:var(--ink);background:var(--ground);border:1px solid var(--rule-strong);border-radius:var(--radius);transition:border-color .2s,box-shadow .2s}.ds-input::placeholder{color:#56655a}.ds-input:hover{border-color:var(--leaf-500)}.ds-input:focus{outline:none;border-color:var(--leaf-500);box-shadow:0 0 0 3px rgb(61 122 79/.25)}"
+    },
+    {
+      "name": "Stage Navigation",
+      "kind": "nav",
+      "description": "Header links with an underline in each section's life-cycle colour.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" style=\"--stage:#3d7a4f\">Products</a><a href=\"#\" aria-current=\"true\" style=\"--stage:#9bb05a\">Quality</a><a href=\"#\" style=\"--stage:#c43d5a\">Origin</a><a href=\"#\" style=\"--stage:#8a4a2c\">Markets</a></nav>",
+      "css": ":host{--leaf-800:#173524;--leaf-700:#1f4a31;--leaf-500:#3d7a4f;--bud-500:#9bb05a;--blush-500:#c43d5a;--blush-600:#a52f49;--clove-500:#8a4a2c;--clove-700:#4a2417;--ground:#f1f3ea;--surface:#fafbf6;--ink:#14231a;--ink-2:#46574b;--rule:rgb(20 35 26/.14);--rule-strong:rgb(20 35 26/.28);--radius:4px;--ease-out:cubic-bezier(0.16,1,0.3,1);--font-sans:\"Archivo\",ui-sans-serif,system-ui,sans-serif;--font-mono:\"Azeret Mono\",ui-monospace,monospace}.ds-nav{display:flex;gap:.25rem;font-family:var(--font-sans)}.ds-nav a{position:relative;padding:.5rem .8rem;text-decoration:none;font-weight:550;color:var(--ink-2);transition:color .2s}.ds-nav a::after{content:\"\";position:absolute;left:.8rem;right:.8rem;bottom:.2rem;height:2px;background:var(--stage);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease-out)}.ds-nav a:hover,.ds-nav a[aria-current=true]{color:var(--ink)}.ds-nav a:hover::after,.ds-nav a[aria-current=true]::after{transform:scaleX(1)}.ds-nav a:focus-visible{outline:2px solid var(--blush-500);outline-offset:3px;border-radius:2px}"
+    },
+    {
+      "name": "Grade Card",
+      "kind": "card",
+      "refersTo": "grade-card",
+      "description": "Product grade with a hairline spec grid in mono figures.",
+      "html": "<article class=\"ds-grade\"><div class=\"ds-grade-body\"><h3>Whole Clove Standard <span class=\"ds-tag\">Grade A</span></h3><dl class=\"ds-specs\"><div><dt>Moisture</dt><dd>&le; 12%</dd></div><div><dt>Eugenol</dt><dd>&ge; 73%</dd></div></dl></div></article>",
+      "css": ":host{--leaf-800:#173524;--leaf-700:#1f4a31;--leaf-500:#3d7a4f;--bud-500:#9bb05a;--blush-500:#c43d5a;--blush-600:#a52f49;--clove-500:#8a4a2c;--clove-700:#4a2417;--ground:#f1f3ea;--surface:#fafbf6;--ink:#14231a;--ink-2:#46574b;--rule:rgb(20 35 26/.14);--rule-strong:rgb(20 35 26/.28);--radius:4px;--ease-out:cubic-bezier(0.16,1,0.3,1);--font-sans:\"Archivo\",ui-sans-serif,system-ui,sans-serif;--font-mono:\"Azeret Mono\",ui-monospace,monospace}.ds-grade{background:var(--surface);border:1px solid var(--rule);border-radius:var(--radius);font-family:var(--font-sans);color:var(--ink);transition:transform .35s var(--ease-out),box-shadow .35s var(--ease-out)}.ds-grade:hover{transform:translateY(-3px);box-shadow:0 18px 40px -24px rgb(23 53 36/.45)}.ds-grade-body{padding:1.5rem}.ds-grade h3{margin:0 0 .9rem;font-size:1.35rem;font-weight:700;font-stretch:88%;letter-spacing:-.01em}.ds-tag{font-size:.55em;font-weight:600;color:var(--leaf-500);vertical-align:.2em;margin-left:.35rem}.ds-specs{display:grid;grid-template-columns:1fr 1fr;margin:0;border-top:1px solid var(--rule)}.ds-specs>div{padding:.8rem .8rem .2rem 0}.ds-specs>div+div{padding-left:.8rem;border-left:1px solid var(--rule)}.ds-specs dt{font-size:.8125rem;color:var(--ink-2)}.ds-specs dd{margin:0;font:500 1.05rem var(--font-mono);font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "Ripening Bar",
+      "kind": "custom",
+      "description": "Signature 3px scroll-progress bar in the four life-cycle stages.",
+      "html": "<div class=\"ds-ripening\"><div class=\"ds-ripening-fill\"></div></div>",
+      "css": ":host{--leaf-800:#173524;--leaf-700:#1f4a31;--leaf-500:#3d7a4f;--bud-500:#9bb05a;--blush-500:#c43d5a;--blush-600:#a52f49;--clove-500:#8a4a2c;--clove-700:#4a2417;--ground:#f1f3ea;--surface:#fafbf6;--ink:#14231a;--ink-2:#46574b;--rule:rgb(20 35 26/.14);--rule-strong:rgb(20 35 26/.28);--radius:4px;--ease-out:cubic-bezier(0.16,1,0.3,1);--font-sans:\"Archivo\",ui-sans-serif,system-ui,sans-serif;--font-mono:\"Azeret Mono\",ui-monospace,monospace}.ds-ripening{position:relative;height:3px;overflow:hidden;background:var(--rule)}.ds-ripening-fill{position:absolute;inset:0;background:linear-gradient(90deg,var(--leaf-500) 0 25%,var(--bud-500) 25% 50%,var(--blush-500) 50% 75%,var(--clove-500) 75% 100%);transform-origin:left;transform:scaleX(.62)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Ripening Bud",
+    "overview": "The category standard for a grower-exporter, played straight and coloured by one plant: glossy leaf, green bud, blushing bud, dried clove. Light, leaf-tinted paper carries the reading; deep leaf fields hold the hero and the enquiry close; dried-clove brown closes the page and colours the numbers. The system is dense with proof (specs, documents, ports, markets) and spare with decoration: hairline rules, a square-ish 4px corner, real photography, one action colour.\n\nThe world rejects the dark-luxury spice site (black, serif, gold). It is a supplier's document made legible, not a boutique.",
+    "keyCharacteristics": [
+      "Four-stage plant palette (leaf, bud, blush, clove) with blush reserved for action.",
+      "Archivo on its width axis: condensed for headings, normal for reading; Azeret Mono only for figures.",
+      "Hairline-ruled lists and spec grids instead of cards-in-cards.",
+      "Flat at rest; shadow only on the primary action, hovered grade cards, and the enquiry panel.",
+      "Full-bleed photography of the real crop; no illustration.",
+      "Automatic dark scheme via `prefers-color-scheme`."
+    ],
+    "rules": [
+      {
+        "name": "The One Blush Rule",
+        "body": "Blush is the action and only the action (buttons, focus, ports, errors). Never use it for decoration or headings.",
+        "section": "colors"
+      },
+      {
+        "name": "The Life-Cycle Order Rule",
+        "body": "When the four stages appear together (ripening bar, nav underlines) they run leaf, bud, blush, clove, in that order.",
+        "section": "colors"
+      },
+      {
+        "name": "The Mono Means Measured Rule",
+        "body": "Azeret Mono is reserved for measured values (capacity, eugenol, moisture, MOQ). Never for labels, prose, or decoration.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat-At-Rest Rule",
+        "body": "Surfaces carry a 1px rule, not a shadow. Shadow signals the action, a hover, or the one floating form.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep blush for actions, focus, ports, and errors only.",
+      "Do set every measured value in Azeret Mono, tabular, with the unit smaller in ink-2.",
+      "Do separate content with 1px rules at 14% ink before reaching for a card.",
+      "Do condense Archivo for headings (82-92% width) and keep body at 100%.",
+      "Do use real crop photography, cropped full-bleed or at 4:3 / 4:5 / 21:8.",
+      "Do give every colour role a dark-scheme value when adding one."
+    ],
+    "donts": [
+      "Don't move toward dark luxury: no black grounds, gold, or serif display.",
+      "Don't use a radius above 4px on interface elements.",
+      "Don't add shadows to resting surfaces.",
+      "Don't reorder or recolour the four life-cycle stages."
+    ]
+  }
+}
