@@ -1,0 +1,37 @@
+/* Phosphor Icons 2.1.1 (MIT), regular weight, subset to the icons this site uses.
+   New icon: add its codepoint here and re-run pyftsubset on the full Phosphor.ttf. */
+@font-face {
+  font-family: "Phosphor";
+  src: url("phosphor.woff") format("woff");
+  font-display: block;
+}
+.ph {
+  font-family: "Phosphor" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ph-anchor::before { content: "\e514"; }
+.ph-arrow-right::before { content: "\e06c"; }
+.ph-boat::before { content: "\e786"; }
+.ph-buildings::before { content: "\e102"; }
+.ph-clock::before { content: "\e19a"; }
+.ph-envelope-simple::before { content: "\e218"; }
+.ph-first-aid-kit::before { content: "\e570"; }
+.ph-flask::before { content: "\e79e"; }
+.ph-globe-hemisphere-east::before { content: "\e28a"; }
+.ph-list::before { content: "\e2f0"; }
+.ph-map-pin::before { content: "\e316"; }
+.ph-moon::before { content: "\e330"; }
+.ph-package::before { content: "\e390"; }
+.ph-plant::before { content: "\ebae"; }
+.ph-plus::before { content: "\e3d4"; }
+.ph-seal-check::before { content: "\e606"; }
+.ph-stack::before { content: "\e466"; }
+.ph-sun::before { content: "\e472"; }
+.ph-tag::before { content: "\e478"; }
+.ph-whatsapp-logo::before { content: "\e5d0"; }
+.ph-x::before { content: "\e4f6"; }
